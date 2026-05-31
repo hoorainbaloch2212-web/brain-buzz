@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - BrainBuzz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button id="themeToggle" class="theme-btn">🌙</button>
+
+    <div class="result-container">
+
+        <!-- Badge + Score -->
+        <div class="result-badge" id="resultBadge">🏆</div>
+        <h1 class="result-title" id="resultTitle">Quiz Complete!</h1>
+        <p class="result-score" id="resultScore">You scored 0 / 10</p>
+        <p class="result-advice" id="resultAdvice">Great effort!</p>
+
+        <!-- Buttons -->
+        <div class="result-buttons">
+            <button class="btn-primary" id="playAgainBtn">🔄 Play Again</button>
+            <button class="btn-secondary" id="reviewBtn">📋 Review Answers</button>
+        </div>
+
+        <!-- Answer Review Section (hidden by default) -->
+        <div class="review-section" id="reviewSection" style="display:none;">
+            <h3>📝 Answer Review</h3>
+            <div id="reviewList"></div>
+        </div>
+
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="result.js"></script>
+
+</body>
+</html>
